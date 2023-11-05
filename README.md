@@ -1,9 +1,10 @@
 # Kafka Java Producer Serialize message to JSON
 
+## Project structure
 
+![image](https://github.com/luiscoco/Kafka_Java_Producer_Serialize_message_to_JSON/assets/32194879/9783002d-c3cf-4105-81c0-0bca044eb90f)
 
 ## Source Code
-
 
 **YourMessageClass.java**
 ```java
@@ -73,6 +74,17 @@ public class KafkaProducerApp {
         producer.close();
     }
 }
+```
+
+**log4j.properties**
+```
+log4j.rootLogger=INFO, stdout
+
+log4j.appender.stdout=org.apache.log4j.ConsoleAppender
+log4j.appender.stdout.Target=System.out
+log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
+log4j.appender.stdout.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1}:%L - %m%n
+
 ```
 
 ## Download the application dependencies (JAR file)
