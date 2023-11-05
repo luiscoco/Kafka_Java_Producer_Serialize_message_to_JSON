@@ -1,18 +1,34 @@
-## Getting Started
+# Kafka_Java_Producer_Serialize_message_to_JSON
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Download the application dependencies (JAR file)
 
-## Folder Structure
+Download the **Kafka** JAR file
 
-The workspace contains two folders by default, where:
+Download the Scala 2.13 file: **kafka_2.13-3.6.0.tgz**
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+https://kafka.apache.org/downloads
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Donwload the **Jackson Databind** and **Jackson Core** JAR files
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core/2.15.3
 
-## Dependency Management
+https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind/2.15.3
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Create a new **lib** folder in your Java application and place all the dependencies (JAR files)
+
+
+
+
+## Compiling the application
+
+Run the command
+
+```
+javac -cp ".;lib/*" src/YourMessageClass.java src/KafkaProducerApp.java
+```
+
+## Running the application
+
+```
+
+```
