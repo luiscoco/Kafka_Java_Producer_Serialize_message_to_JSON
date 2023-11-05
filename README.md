@@ -2,11 +2,11 @@
 
 ## Download the application dependencies (JAR file)
 
-Download the **Kafka** JAR file
-
-Download the Scala 2.13 file: **kafka_2.13-3.6.0.tgz**
+Navigate to the Apache Kafka web page URL, and download the **Kafka** JAR file
 
 https://kafka.apache.org/downloads
+
+Download the Scala 2.13 file: **kafka_2.13-3.6.0.tgz**
 
 Donwload the **Jackson Databind** and **Jackson Core** JAR files
 
