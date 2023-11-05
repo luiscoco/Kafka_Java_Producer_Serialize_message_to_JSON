@@ -1,10 +1,10 @@
 # Kafka Java Producer Serialize message to JSON
 
-## Project structure
+## 1. Project structure
 
 ![image](https://github.com/luiscoco/Kafka_Java_Producer_Serialize_message_to_JSON/assets/32194879/9783002d-c3cf-4105-81c0-0bca044eb90f)
 
-## Source Code
+## 2. Source Code
 
 **YourMessageClass.java**
 ```java
@@ -87,7 +87,7 @@ log4j.appender.stdout.layout.ConversionPattern=%d{yyyy-MM-dd HH:mm:ss} %-5p %c{1
 
 ```
 
-## Download the application dependencies (JAR file)
+## 3. Download the application dependencies (JAR file)
 
 Navigate to the Apache Kafka web page URL, and download the **Kafka** JAR file
 
@@ -103,19 +103,18 @@ https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind/2
 
 Create a new **lib** folder in your Java application and place all the dependencies (JAR files)
 
+![image](https://github.com/luiscoco/Kafka_Java_Producer_Serialize_message_to_JSON/assets/32194879/c4907423-c63d-43d5-835d-c760518687e3)
 
-
-
-## Compiling the application
+## 4. Compiling the application
 
 Run the command
 
 ```
-javac -cp ".;lib/*" src/YourMessageClass.java src/KafkaProducerApp.java
+C:\Kafka with Java\OrderProducer> javac -cp ".;lib/*" src/YourMessageClass.java src/KafkaProducerApp.java
 ```
 
-## Running the application
+## 5. Running the application
 
 ```
-
+C:\Kafka with Java\OrderProducer> java -cp ".;lib/*;src" KafkaProducerApp
 ```
