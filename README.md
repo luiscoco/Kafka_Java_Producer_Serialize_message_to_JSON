@@ -105,7 +105,21 @@ Create a new **lib** folder in your Java application and place all the dependenc
 
 ![image](https://github.com/luiscoco/Kafka_Java_Producer_Serialize_message_to_JSON/assets/32194879/c4907423-c63d-43d5-835d-c760518687e3)
 
-## 4. Compiling the application
+## 4. Run zookeeper and kafka-server
+
+Run the following command to execute **zookeeper**:
+
+```
+zookeeper-server-start C:\kafka_2.13-3.6.0\config\zookeeper.properties
+```
+
+Run the followind command to start **kafka-server**:
+
+```
+kafka-server-start C:\kafka_2.13-3.6.0\config\server.properties
+```
+
+## 5. Compiling the application
 
 Run the command
 
@@ -113,7 +127,7 @@ Run the command
 C:\Kafka with Java\OrderProducer> javac -cp ".;lib/*" src/YourMessageClass.java src/KafkaProducerApp.java
 ```
 
-## 5. Running the application
+## 6. Running the application
 
 ```
 C:\Kafka with Java\OrderProducer> java -cp ".;lib/*;src" KafkaProducerApp
